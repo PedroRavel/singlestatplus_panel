@@ -1,0 +1,48 @@
+<div class="section gr-form-group">
+  <h5 class="section-heading">BGColor</h5>
+  <div class="gf-form">
+    <label class="gf-form-label width-8">Bg Color</label>
+    <span class="max-width-4">
+      <spectrum-picker class="gf-form-input" ng-model="ctrl.panel.bgColor" ng-change="ctrl.render()" ></spectrum-picker>
+    </span>
+  </div>
+</div>
+
+<div class="section gr-form-group">
+  <h5 class="section-heading">Stat options</h5>
+  <div class="gf-form">
+    <label class="gf-form-label width-4">Stat</label>
+    <div class="gf-form-select-wrapper max-width-7">
+      <select class="input-small gf-form-input"  ng-model="ctrl.panel.dataChoice" ng-options="t for t in ctrl.panel.aliases" ng-change="ctrl.chooseStat()"></select>
+    </div>
+    <label class="gf-form-label width-4">Color</label>
+    <span class="max-width-4">
+      <spectrum-picker class="gf-form-input" ng-model="ctrl.panel.tempData.color" ng-change="ctrl.changeColor()" ></spectrum-picker>
+    </span>
+
+  </div>
+
+  <div class="gf-form">
+    <label class="gf-form-label width-4">Min</label>
+    <input type = "text" class ="gf-form-input max-width-5" ng-model="ctrl.panel.tempData.minThreshold" ng-change="ctrl.setGaugeThresholds()" ng-model-onblur>
+    <label class="gf-form-label width-4">Max</label>
+    <input type = "text" class ="gf-form-input max-width-5" ng-model="ctrl.panel.tempData.maxThreshold" ng-change="ctrl.setGaugeThresholds()" ng-model-onblur>
+  </div>
+</div>
+
+<div class="section gr-form-group">
+  <h5 class="section-heading">Graph Type</h5>
+  <div class="gf-form">
+    <div class="gf-form-select-wrapper max-width-9">
+      <select class="input-small gf-form-input" ng-model="ctrl.panel.graphChoice" ng-options="t for t in ['bar', 'line','gauge']" ng-change="ctrl.chooseGraph(ctrl.panel.graphChoice)"></select>
+    </div>
+  </div>
+</div>
+<div class="section gr-form-group">
+  <div class = "gf-form">
+    <div class="section gr-form-group">
+      <h5 class="section-heading">Single Stat Max</h5>
+      <input type = "text" class ="gf-form-input width-4" ng-model="ctrl.panel.pointSize" ng-change="ctrl.setSSCount()" ng-model-onblur>
+    </div>
+  </div>
+</div>

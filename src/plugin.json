@@ -1,0 +1,35 @@
+{
+  "type": "panel",
+  "name": "SingleStatPlus",
+  "id": "grafana-singlestatplus-panel",
+
+  "pages": [
+    { "name": "Live stream", "component": "StreamPageCtrl", "role": "Editor"},
+    { "name": "Log view", "component": "LogsPageCtrl", "role": "Viewer"}
+  ],
+
+  "css": {
+    "dark":  "css/dark.css",
+    "light":  "css/light.css"
+  },
+
+  "info": {
+    "description": "SingleStatPlus panel for Grafana",
+    "author": {
+      "name": "Pedro Ravel",
+      "url": ""
+    },
+    "keywords": ["SingleStatPlus, Panel"],
+    "version": "0.0.1",
+    "updated": "2016-10-01"
+  },
+
+  "includes": [
+
+  ],
+
+  "dependencies": {
+    "grafanaVersion": "3.x.x",
+    "plugins": []
+  }
+}

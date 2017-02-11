@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/module.js"],"names":["SingleStatPlusCtrl"],"mappings":";;;;;;;;AAAQA,wB,0BAAAA,kB;;;2BAGNA,kB","file":"module.js","sourcesContent":["import {SingleStatPlusCtrl} from './singlestatplus_ctrl.js';\n\nexport {\n  SingleStatPlusCtrl as PanelCtrl\n};\n"]}
