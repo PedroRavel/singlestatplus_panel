@@ -11,3 +11,10 @@ Visualize single stat in bar, line or gauge graph. Each incoming single stat wil
 - Clicking a metric on status bar will isolate metric for viewing (click again to show all).
 - Set the number of bars and line points between 1 and 30.
 - Change color of individual stat.
+
+**Bar**
+![Settings Window](https://github.com/PedroRavel/singlestatplus_panel/blob/master/src/img/linesstat.png)
+**Line**
+![Settings Window](https://github.com/PedroRavel/singlestatplus_panel/blob/master/src/img/barsstat.png)
+**Gauge**
+![Settings Window](https://github.com/PedroRavel/singlestatplus_panel/blob/master/src/img/gaugesstat.png)
